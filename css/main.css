@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'ellizModels';
+    src: url('../fonts/ellizModels.eot?5ug0gv');
+    src: url('../fonts/ellizModels.eot?5ug0gv#iefix') format('embedded-opentype'),
+    url('../fonts/ellizModels.ttf?5ug0gv') format('truetype'),
+    url('../fonts/ellizModels.woff?5ug0gv') format('woff'),
+    url('../fonts/ellizModels.svg?5ug0gv#ellizModels') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="i-eM-"], [class*=" i-eM-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'ellizModels' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.i-eM-images:before {
+    content: "\e90e";
+}
+
+.i-eM-camera:before {
+    content: "\e90f";
+}
+
+.i-eM-profile:before {
+    content: "\e923";
+}
+
+.i-eM-stack:before {
+    content: "\e92e";
+}
+
+.i-eM-address-book:before {
+    content: "\e944";
+}
+
+.i-eM-alarm:before {
+    content: "\e950";
+}
+
+.i-eM-calendar:before {
+    content: "\e953";
+}
+
+.i-eM-users:before {
+    content: "\e972";
+}
+
+.i-eM-gift:before {
+    content: "\e99f";
+}
+
+.i-eM-clipboard:before {
+    content: "\e9b8";
+}
+
+.i-eM-checkmark:before {
+    content: "\ea10";
+    padding: 1rem;
+    color: #c5c9c3;
+}
+
+.i-eM-mail:before {
+    content: "\ea83";
+}
+
+.i-eM-instagram:before {
+    content: "\ea92";
+}
+
+.i-eM-vk:before {
+    content: "\ea98";
+}
+
+
+section h1 {
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    color: #240d39;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.description__wrapper,
+.profile__wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.description__item {
+    width: 30%;
+    margin: 0;
+}
+
+.description__photos img,
+.profile__photo img {
+    width: 100%;
+}
+
+.description__monogram {
+    position: absolute;
+    width: 10%;
+}
+
+.monogram-top {
+    top: -2.5rem;
+    left: 0;
+    transform: scaleX(-1);
+    transform: scaleY(-1);
+}
+
+.monogram-bottom {
+    right: 0;
+    bottom: -2rem;
+    transform: scaleX(-1);
+}
+
+.description__monogram img {
+    width: 100%;
+}
+
+.description__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.description__content-title {
+    margin: 1rem;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+}
+
+.description__photos-series figure {
+    position: relative;
+    margin: 0;
+}
+
+.description__photos-series figurecaption {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 10%;
+    background-color: rgba(168, 56, 89, 0.9);
+    font-family: 'Gelasio', serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.description__photos-series figurecaption p {
+    color: white;
+}
+
+figurecaption span {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+}
+
+#advantages {
+    background-color: #e4dde4;
+    height: 12rem;
+}
+
+.advantages__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.advantages__item {
+    position: relative;
+    color: #240d39;
+    text-align: center;
+}
+
+.advantages__item i:before {
+    position: absolute;
+    top: 3rem;
+    left: calc(50% - 2.5rem);
+    border: 2px solid #240d39;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.questions__wrapper {
+    margin: 1rem 5rem;
+}
+
+.questions__item {
+    margin: 1rem;
+}
+
+.questions__item a {
+    text-decoration: none;
+}
+
+.questions__wrapper i {
+    float: right;
+}
+
+.questions__answers {
+    display: none;
+}
+
+/**/
+.questions__item:hover .questions__answers {
+    display: block;
+    padding: 1rem;
+    margin: 0.7rem;
+    background-color: rgba(158, 158, 153, 0.5);
+    color: white;
+}
+
+.questions__item:hover .i-eM-checkmark:before {
+    color: #a83859;
+}
+
+#profile {
+    background-color: #e4dde4;
+}
+
+.profile__wrapper {
+    align-items: center;
+}
+
+.profile__item {
+    width: 40%;
+    margin: 0;
+}
+
+.profile__item fieldset,
+input[type=submit] {
+    background-color: #e4dde4;
+}
+
+input[type=submit] {
+    color: #240d39;
+    font-family: 'Lobster', cursive;
+}
+
+input[type=checkbox] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
