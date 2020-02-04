@@ -10,6 +10,77 @@
     font-display: block;
 }
 
+
+[class^="i-eM-"], [class*=" i-eM-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'ellizModels' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.i-eM-images:before {
+    content: "\e90e";
+}
+
+.i-eM-camera:before {
+    content: "\e90f";
+}
+
+.i-eM-profile:before {
+    content: "\e923";
+}
+
+.i-eM-stack:before {
+    content: "\e92e";
+}
+
+.i-eM-address-book:before {
+    content: "\e944";
+}
+
+.i-eM-alarm:before {
+    content: "\e950";
+}
+
+.i-eM-calendar:before {
+    content: "\e953";
+}
+
+.i-eM-users:before {
+    content: "\e972";
+}
+
+.i-eM-gift:before {
+    content: "\e99f";
+}
+
+.i-eM-clipboard:before {
+    content: "\e9b8";
+}
+
+.i-eM-checkmark:before {
+    content: "\ea10";
+}
+
+.i-eM-mail:before {
+    content: "\ea83";
+}
+
+.i-eM-instagram:before {
+    content: "\ea92";
+}
+
+.i-eM-vk:before {
+    content: "\ea98";
+}
+
 * {
     box-sizing: border-box;
     color: #240d39;
@@ -17,15 +88,15 @@
 
 body {
     position: relative;
-    margin: 0;
     padding: 1px;
+    margin: 0;
     font-family: 'Lobster', cursive;
 }
 
 .main-nav__items,
 .main-footer {
-    background-color: #e4dde4;
     box-shadow: 2px 1px 3px 1px rgba(89, 87, 87, 0.5);
+    background-color: #e4dde4;
 }
 
 .main-nav__items {
@@ -158,6 +229,62 @@ body {
     display: none;
 }
 
+.description__wrapper,
+.events__wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.events__wrapper {
+    justify-content: flex-start;
+}
+
+.description__wrapper {
+    justify-content: space-around;
+}
+
+.description__item,
+.events__item {
+    width: 30%;
+    margin: 0;
+}
+
+.description__photos img,
+.events__photos img {
+    width: 100%;
+}
+
+.description__photos-series figure,
+.events__photos-series figure {
+    position: relative;
+    margin: 0;
+}
+
+.description__photos-series figcaption,
+.events__photos-series figcaption {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 10%;
+    background-color: rgba(168, 56, 89, 0.9);
+    font-family: 'Gelasio', serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.description__photos-series figcaption p,
+.events__photos-series figcaption p {
+    color: white;
+}
+
+figcaption span {
+    color: white;
+    font-family: 'Great Vibes', cursive;
+}
+
 .main-footer__container {
     text-align: center;
 }
@@ -180,10 +307,6 @@ body {
 .i-eM-camera:before {
     content: "\e90f";
 }
-
-/*.main-footer__rights:before {
-    content: "\xA9";
-}*/
 
 .main-footer__contact {
     padding: 0;
