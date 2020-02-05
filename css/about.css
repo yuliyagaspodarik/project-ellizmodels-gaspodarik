@@ -1,0 +1,47 @@
+.aboutus__title {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    color: #240d39;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.aboutus__photo {
+    width: 40%;
+    margin: 2rem;
+}
+
+.aboutus__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus__photo img {
+    width: 100%;
+}
+
+.aboutus__monogram {
+    width: 100%;
+}
+
+.aboutus__monogram img {
+    width: 100%;
+}
+
+.aboutus__description {
+    width: 40%;
+    padding: 1rem;
+    margin: 1rem;
+    color: #240d39;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.aboutus__description span {
+    font-family: 'Gelasio', serif;
+    font-size: 1.3rem;
+    letter-spacing: 0;
+}
