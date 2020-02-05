@@ -1,0 +1,152 @@
+.projects__wrapper {
+    text-align: center;
+}
+
+.projects__title,
+.events__title,
+.castings__title {
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid #a83859;
+    color: #240d39;
+    font-size: 2rem;
+}
+
+.projects__subtitle,
+.events__subtitle,
+.castings__subtitle {
+    color: #240d39;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.projects__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.projects__item {
+    width: 25%;
+    margin: 1rem;
+}
+
+.projects__item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects__link a,
+.events__link a {
+    color: #a83859;
+    text-decoration: none;
+    font-family: 'Gelasio', serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
+
+.projects__link a:after,
+.events__link a:after {
+    content: ' ';
+    display: inline-block;
+    vertical-align: center;
+    border-left: 5px solid #a83859;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+}
+
+.projects__photo figcaption {
+    border-bottom: 1px solid #a83859;
+    font-size: 1.3rem;
+}
+
+.events__item__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.events__item__content-path-image {
+    width: 35%;
+    margin: 2rem;
+}
+
+.events__item__content-path-image img {
+    width: 100%;
+    filter: grayscale(80%);
+}
+
+.events__item__content-path-text h3 {
+    margin: 0;
+    color: #a83859;
+    text-transform: uppercase;
+    font-family: 'Gelasio', serif;
+}
+
+.events__item__content-path-text {
+    margin-top: 2rem;
+    color: #240d39;
+    font-size: 0.8rem;
+}
+
+.events__item__content-path {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.castings__wrapper {
+    display: flex;
+}
+
+.castings__wrapper-f {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.castings__wrapper-s {
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 2rem;
+
+}
+
+.castings__information {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.castings__information p {
+    margin: 0;
+}
+
+.castings__cover {
+    width: 40%;
+}
+
+.castings__item {
+    width: 10%;
+}
+
+.casting__photo {
+    width: 25%;
+}
+
+.castings__cover img,
+.castings__photo img {
+    width: 100%;
+}
+
+.castings__item p {
+    border-top: 1px solid #a83859;
+    font-size: 0.8rem;
+}
+
+.castings__item span {
+    color: #a83859;
+}
