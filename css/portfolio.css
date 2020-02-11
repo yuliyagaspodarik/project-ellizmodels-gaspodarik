@@ -1,0 +1,33 @@
+.portfolio__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.portfolio__item {
+    width: 20%;
+    margin: 1rem;
+}
+
+.portfolio__item img {
+    width: 100%;
+    /*border-radius: 50px;
+    object-fit: cover;*/
+}
+
+.portfolio__photo figcaption {
+    border-bottom: 1px solid #a83859;
+    border-radius: 50px;
+    font-size: 1.3rem;
+}
+
+.portfolio__profile {
+    color: #a83859;
+    text-decoration: none;
+    font-family: 'Gelasio', serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
