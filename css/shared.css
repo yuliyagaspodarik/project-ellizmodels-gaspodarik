@@ -285,6 +285,23 @@ figcaption span {
     font-family: 'Great Vibes', cursive;
 }
 
+.title {
+    padding-bottom: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid #a83859;
+    color: #240d39;
+    font-size: 2rem;
+}
+
+.subtitle {
+    color: #240d39;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
 .main-footer__container {
     text-align: center;
 }

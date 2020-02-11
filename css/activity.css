@@ -1,34 +1,10 @@
 .projects__wrapper {
-    text-align: center;
-}
-
-.projects__title,
-.events__title,
-.castings__title {
-    padding-bottom: 1rem;
-    margin-left: 2rem;
-    margin-bottom: 0;
-    border-bottom: 1px solid #a83859;
-    color: #240d39;
-    font-size: 2rem;
-}
-
-.projects__subtitle,
-.events__subtitle,
-.castings__subtitle {
-    color: #240d39;
-    padding: 0;
-    margin-top: 0;
-    margin-left: 2rem;
-    font-size: 1rem;
-}
-
-.projects__wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     padding: 1rem;
     margin: 1rem;
+    text-align: center;
 }
 
 .projects__item {
