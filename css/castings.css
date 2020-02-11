@@ -1,0 +1,50 @@
+.castings__wrapper {
+    display: flex;
+}
+
+.castings__wrapper-f {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.castings__wrapper-s {
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 2rem;
+
+}
+
+.castings__information {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.castings__information p {
+    margin: 0;
+}
+
+.castings__cover {
+    width: 40%;
+}
+
+.castings__item {
+    width: 10%;
+}
+
+.casting__photo {
+    width: 25%;
+}
+
+.castings__cover img,
+.castings__photo img {
+    width: 100%;
+}
+
+.castings__item p {
+    border-top: 1px solid #a83859;
+    font-size: 0.8rem;
+}
+
+.castings__item span {
+    color: #a83859;
+}
