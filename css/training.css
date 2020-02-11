@@ -1,0 +1,85 @@
+.teachers__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.teachers__item {
+    width: 17%;
+    margin: 1rem;
+}
+
+.teachers__item img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.teachers__profile {
+    color: #a83859;
+    text-decoration: none;
+    font-family: 'Gelasio', serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+}
+
+.teachers__photo figcaption {
+    border-bottom: 1px solid #a83859;
+    border-radius: 50px;
+    font-size: 1.3rem;
+}
+
+.lessons {
+    padding: 4rem;
+    margin: 4rem 0;
+    background-color: #e4dde4;
+}
+
+.lessons__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lessons__item {
+    width: 35%;
+}
+
+.lessons__item img {
+    width: 100%;
+}
+
+.lessons__item figure {
+    position: relative;
+}
+
+.lessons__item figcaption {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    padding: 0.5rem;
+    background-color: #e4dde4;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.lessons__link {
+    text-decoration: none;
+    color: #240d39;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.groups__information {
+    margin: 1rem 2rem;
+}
+
+.groups__information span {
+    color: #a83859;
+}
