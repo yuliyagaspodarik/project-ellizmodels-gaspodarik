@@ -87,15 +87,18 @@
   </nav>-->
   <main>
     <section id="description">
-      <h1 class="description__title">Приглашаем детей и подростков в детское модельное агентство</h1>
+      <h1 class="description__title title">Приглашаем детей и подростков в детское модельное агентство</h1>
       <div class="description__wrapper">
-        <div class="description__monogram monogram-top">
+        <!--<div class="description__monogram monogram-top">
           <img src="images/monogram.png" alt="monogram-picture">
-        </div>
+        </div>-->
         <div class="description__item description__photos description__photos-first">
           <img src="images/img1.jpg" alt="Милена Гасподарик">
         </div>
         <div class="description__item description__content">
+          <div class="description__monogram">
+            <img src="images/monogram3.png" alt="monogram-picture">
+          </div>
           <p>Дружная команда профессионалов поможет раскрыть потенциал Вашего ребенка, а опытный агент сделает
             все возможное для участия каждой нашей модели в крупных съемках, показах и проектах.
           </p>
@@ -115,9 +118,9 @@
             </figcaption>
           </figure>
         </div>
-        <div class="description__monogram monogram-bottom">
+        <!--<div class="description__monogram monogram-bottom">
           <img src="images/monogram.png" alt="monogram-picture">
-        </div>
+        </div>-->
       </div>
     </section>
     <section id="advantages">
@@ -130,7 +133,7 @@
       </div>
     </section>
     <section id="questions">
-      <h1 class="questions__title">Самые популярные вопросы</h1>
+      <h1 class="questions__title title">Самые популярные вопросы</h1>
       <div class="questions__wrapper">
         <div class="questions__item">
           <a href="#ans1" title="Нажмите для просмотра">Сколько стоят занятия в модельной школе?</a>
@@ -184,37 +187,29 @@
         </div>
         <div class="profile__item">
           <form action="#">
-            <fieldset>
-              <legend>Контактная информация</legend>
-              <p>
-                <label>
-                  <input type="text" name="firstname" placeholder="Ваше имя">
-                </label>
-              </p>
-              <p>
-                <label>
-                  <input type="email" name="emailbox" placeholder="Ваш E-mail">
-                </label>
-              </p>
-            </fieldset>
-            <fieldset>
-              <legend>Содержание</legend>
-              <p>
-                <label for="message"></label>
-                <textarea id="message" name="massage" rows="20" cols="40"
-                          placeholder="Оставьте свой отзыв или вопрос"></textarea>
-              </p>
-            </fieldset>
-            <fieldset>
-              <legend>Хочу начать учиться в Elliz Models</legend>
-              <p>
-                <label>
-                  <input type="checkbox" name="request" value="Yes">
-                </label>
-              </p>
-            </fieldset>
-            <br/>
-            <input type="submit" value="Отправить" onclick="alert('Ваша заявка отправлена')">
+            <p class="form-cell_left">
+              <label>Как Вас зовут<br/>
+                <input type="text" class="form-cell" name="firstname" placeholder="введите имя">
+              </label>
+            </p>
+            <p class="form-cell_right">
+              <label>Ваша почта<br/>
+                <input type="email" class="form-cell" name="emailbox" placeholder="введите E-mail">
+              </label>
+            </p>
+            <p>
+              <label for="message"></label>
+              <textarea id="message" name="massage" rows="20" cols="80"
+                        placeholder="Оставьте свой отзыв или вопрос"></textarea>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" name="request" value="Yes">Хочу учиться в Elliz Models
+              </label>
+            </p>
+            <p>
+              <input type="submit" value="Отправить" onclick="alert('Ваша заявка отправлена')">
+            </p>
           </form>
         </div>
       </div>

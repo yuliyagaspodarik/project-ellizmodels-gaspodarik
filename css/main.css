@@ -82,15 +82,6 @@
     content: "\ea98";
 }
 
-section h1 {
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
-    color: #240d39;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
 .profile__wrapper {
     position: relative;
     display: flex;
@@ -105,10 +96,11 @@ section h1 {
 }
 
 .description__monogram {
-    position: absolute;
-    width: 10%;
+   /* position: absolute;*/
+    width: 50%;
+    margin: 0 auto;
 }
-
+/*
 .monogram-top {
     top: -3rem;
     left: 0;
@@ -120,17 +112,18 @@ section h1 {
     right: 0;
     bottom: -3rem;
     transform: scaleX(-1);
-}
+}*/
 
 .description__monogram img {
     width: 100%;
 }
 
+
 .description__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 1.2rem;
+    justify-content: flex-start;
+    font-size: 1rem;
 }
 
 .description__content-title {
@@ -142,9 +135,16 @@ section h1 {
 #advantages {
     background-color: #e4dde4;
     box-shadow: 2px 1px 3px 1px rgba(89, 87, 87, 0.5);
-    height: 15rem;
+    height: 20rem;
 }
 
+.advantages__title,
+.profile__title {
+    margin: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
 .advantages__wrapper {
     display: flex;
     justify-content: space-around;
@@ -207,7 +207,7 @@ section h1 {
 }
 
 .profile__wrapper {
-    align-items: center;
+    align-items: flex-start;
 }
 
 .profile__item {
@@ -215,13 +215,29 @@ section h1 {
     margin: 0;
 }
 
-.profile__item fieldset,
+.form-cell,
 input[type=submit] {
-    background-color: #e4dde4;
+    width: 12rem;
+    height: 2rem;
+    border: none;
+}
+
+.form-cell_left {
+    float: left;
+}
+
+.form-cell_right {
+    float: right;
+}
+
+textarea {
+    border: none;
 }
 
 input[type=submit] {
-    color: #240d39;
+    color: white;
+    background-color: #a83859;
+    font-size: 1rem;
     font-family: 'Lobster', cursive;
 }
 

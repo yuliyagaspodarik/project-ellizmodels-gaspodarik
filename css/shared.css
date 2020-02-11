@@ -131,13 +131,17 @@ body {
     position: absolute;
     top: 100%;
     display: block;
-    width: 7rem;
+    width: 9rem;
     list-style: none;
-    padding: 0;
+    padding: 0.5rem;
     color: #240d39;
     background-color: rgba(228, 221, 228, 0.5);
     text-align: left;
     cursor: pointer;
+}
+
+.activity:hover .main-nav__items-submenu li {
+    padding-bottom: 0.5rem;
 }
 
 .logo-header:hover {
@@ -244,11 +248,12 @@ body {
 
 .description__wrapper {
     justify-content: space-around;
+    padding-top: 2rem;
 }
 
 .description__item,
 .events__item {
-    width: 30%;
+    width: 27%;
     margin: 0;
 }
 
@@ -287,8 +292,7 @@ figcaption span {
 
 .title {
     padding-bottom: 1rem;
-    margin-left: 2rem;
-    margin-bottom: 0;
+    margin: 4rem 2rem 0 2rem;
     border-bottom: 1px solid #a83859;
     color: #240d39;
     font-size: 2rem;
