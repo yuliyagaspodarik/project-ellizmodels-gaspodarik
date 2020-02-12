@@ -331,8 +331,24 @@ figcaption span {
     margin: 1rem 2rem;
 }
 
-.event__video-photo {
+.event__video {
     margin: 1rem;
+}
+
+.event__photo {
+    width: 25%;
+    margin: 1rem;
+}
+
+.event__photo img {
+    width: 100%;
+}
+
+.event__photo_wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 2rem;
 }
 
 .main-footer__container {
