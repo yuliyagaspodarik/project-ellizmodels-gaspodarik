@@ -306,6 +306,21 @@ figcaption span {
     font-size: 1rem;
 }
 
+.projects-item__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.projects-item__photo {
+    width: 40%;
+    margin: 1rem;
+}
+
+.projects-item__photo img {
+    width: 100%;
+}
+
 .main-footer__container {
     text-align: center;
 }
