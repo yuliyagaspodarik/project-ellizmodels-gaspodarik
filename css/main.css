@@ -82,42 +82,14 @@
     content: "\ea98";
 }
 
-.profile__wrapper {
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.profile__photo img {
-    width: 100%;
-}
-
 .description__monogram {
-   /* position: absolute;*/
     width: 50%;
     margin: 0 auto;
 }
-/*
-.monogram-top {
-    top: -3rem;
-    left: 0;
-    transform: scaleX(-1);
-    transform: scaleY(-1);
-}
-
-.monogram-bottom {
-    right: 0;
-    bottom: -3rem;
-    transform: scaleX(-1);
-}*/
 
 .description__monogram img {
     width: 100%;
 }
-
 
 .description__content {
     display: flex;
@@ -130,6 +102,7 @@
     margin: 1rem;
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
+    text-align: center;
 }
 
 #advantages {
@@ -169,7 +142,7 @@
 }
 
 .questions__wrapper {
-    margin: 1rem 5rem;
+    margin: 3rem 5rem;
 }
 
 .questions__item {
@@ -207,7 +180,17 @@
 }
 
 .profile__wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: flex-start;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.profile__photo img {
+    width: 100%;
 }
 
 .profile__item {

@@ -41,36 +41,36 @@
     font-size: 1.3rem;
 }
 
-.events__item__content {
+.events__item_content {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.events__item__content-path-image {
+.events__item_content-path-image {
     width: 35%;
     margin: 2rem;
 }
 
-.events__item__content-path-image img {
+.events__item_content-path-image img {
     width: 100%;
     filter: grayscale(80%);
 }
 
-.events__item__content-path-text h3 {
+.events__item_content-path-text h3 {
     margin: 0;
     color: #a83859;
     text-transform: uppercase;
     font-family: 'Gelasio', serif;
 }
 
-.events__item__content-path-text {
+.events__item_content-path-text {
     margin-top: 2rem;
     color: #240d39;
     font-size: 0.8rem;
 }
 
-.events__item__content-path {
+.events__item_content-path {
     display: flex;
     justify-content: flex-start;
     align-items: center;
