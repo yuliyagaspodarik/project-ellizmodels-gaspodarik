@@ -21,6 +21,7 @@
 
 .castings__information p {
     margin: 0;
+    text-align: justify;
 }
 
 .castings__cover {
