@@ -147,32 +147,33 @@
 
 .questions__item {
     margin: 1rem;
+    font-family: 'Lobster', cursive;
     font-size: 1.2rem;
+    border: none;
 }
 
-.questions__item a {
-    text-decoration: none;
+.questions__item:active {
+    border-color: #c5c9c3;
 }
 
-.questions__wrapper i {
-    float: right;
+.ui-state-active {
+    background-color: #c5c9c3;
+   /* border-color: #c5c9c3;*/
+}
+
+.ui-state-default {
+    color: #240d39;
 }
 
 .questions__answers {
-    display: none;
-}
-
-/*js*/
-.questions__item:hover .questions__answers {
-    display: block;
-    padding: 1rem;
     margin: 0.7rem;
-    background-color: rgba(158, 158, 153, 0.5);
-    color: white;
+    background-color: #c5c9c3/*rgba(158, 158, 153, 0.7)*/;
+    font-family: 'Lobster', cursive;
 }
 
-.questions__item:hover .i-eM-checkmark:before {
-    color: #a83859;
+.questions__answers p {
+    color: white;
+    font-size: 1.1rem;
 }
 
 #profile {

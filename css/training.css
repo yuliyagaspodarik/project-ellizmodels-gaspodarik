@@ -52,8 +52,14 @@
 
 .lessons__item img {
     width: 100%;
+    object-fit: cover;
 }
 
+.lessons__item:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1,1.1);
+
+}
 .lessons__item figure {
     position: relative;
 }

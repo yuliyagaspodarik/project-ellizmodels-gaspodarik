@@ -49,7 +49,7 @@
 
 .events__item_content-path-image {
     width: 35%;
-    margin: 2rem;
+    margin: 2rem 0 0 2rem;
 }
 
 .events__item_content-path-image img {
@@ -65,7 +65,7 @@
 }
 
 .events__item_content-path-text {
-    margin-top: 2rem;
+    margin: 2rem 0 0 2rem;
     color: #240d39;
     font-size: 0.8rem;
 }

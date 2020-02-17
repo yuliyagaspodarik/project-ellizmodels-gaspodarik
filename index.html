@@ -7,6 +7,17 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gelasio:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      $(function () {
+          $("#question__wrapper").accordion();
+      });
+  </script>
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/shared.css">
 </head>
@@ -42,7 +53,7 @@
           <a href="training.html" title="Перейти к разделу об обучении">Обучение</a>
           <ul class="main-nav__items-submenu">
             <li><a href="training.html#teachers">Педагоги</a></li>
-            <li><a href="training.html#lessons">Занятия</a></li>
+            <li><a href="lessons.html">Занятия</a></li>
           </ul>
         </li>
         <li class="main-nav__item">
@@ -133,49 +144,43 @@
     </section>
     <section id="questions">
       <h1 class="questions__title title">Самые популярные вопросы</h1>
-      <h2 class="subtitle">То, что интересует Вас чаще всего</h2>
-      <div class="questions__wrapper">
-        <div class="questions__item">
-          <a href="#ans1" title="Нажмите для просмотра">Сколько стоят занятия в модельной школе?</a>
-          <i class="i-eM-checkmark"></i>
-          <div id="ans1" class="questions__answers">Стоимость занятий составляет 40 br для обучающихся младшей группы
-            и 60 br для обучающихся других групп.
+      <h2 class="questions__subtitle subtitle">То, что интересует Вас чаще всего</h2>
+      <div id="question__wrapper" class="questions__wrapper">
+        <h3 class="questions__item">Сколько стоят занятия в модельной школе?</h3>
+        <div id="ans1" class="questions__answers">
+          <p>
+            Стоимость занятий составляет 40 br для обучающихся младшей группы и 60 br для обучающихся других групп.
             Предусмотрена система скидок для детей из одной семьи. Кроме того, производится перерасчет стоимости
             занятий, пропущенных по уважительной причине.
-          </div>
+          </p>
         </div>
-        <div class="questions__item">
-          <a href="#ans2" title="Нажмите для просмотра">У меня нет опыта. Возьмут ли меня в школу?</a>
-          <i class="i-eM-checkmark"></i>
-          <div id="ans2" class="questions__answers">
+        <h3 class="questions__item">У меня нет опыта. Возьмут ли меня в школу?</h3>
+        <div id="ans2" class="questions__answers">
+          <p>
             Да, у нас можно начинать учиться без какого-либо модельного опыта. Самое главное - это желание учиться
             и развиваться.
-          </div>
+          </p>
         </div>
-        <div class="questions__item">
-          <a href="#ans3" title="Нажмите для просмотра">Есть ли какие-то определенные параметры, по которым отбирают
-            детей
-            в модельную школу?</a>
-          <i class="i-eM-checkmark"></i>
-          <div id="ans3" class="questions__answers">
+        <h3 class="questions__item">Есть ли какие-то определенные параметры, по которым отбирают детей в модельную
+          школу?</h3>
+        <div id="ans3" class="questions__answers">
+          <p>
             Никаких параметров нет! Мы рады абсолютно всем ребятам, кто хочет развиваться и заниматься своим
             дополнительным образованием.
-          </div>
+          </p>
         </div>
-        <div class="questions__item">
-          <a href="#ans4" title="Нажмите для просмотра">Идет ли сейчас набор в школу моделей?</a>
-          <i class="i-eM-checkmark"></i>
-          <div id="ans4" class="questions__answers">
-            Да, мы формируем группы для занятий в течение всего года!
-            Так что смело пишите и звоните нам в любое время!
-          </div>
+        <h3 class="questions__item">Идет ли сейчас набор в школу моделей?</h3>
+        <div id="ans4" class="questions__answers">
+          <p>
+            Да, мы формируем группы для занятий в течение всего года! Так что смело пишите и звоните нам в любое
+            время!
+          </p>
         </div>
-        <div class="questions__item">
-          <a href="#ans5" title="Нажмите для просмотра">Как к вам попасть?</a>
-          <i class="i-eM-checkmark"></i>
-          <div id="ans5" class="questions__answers">
+        <h3 class="questions__item">Как к вам попасть?</h3>
+        <div id="ans5" class="questions__answers">
+          <p>
             Вы можете оставить заявку здесь, заполнив форму, либо связаться с нами по указанным номерам телефона.
-          </div>
+          </p>
         </div>
       </div>
     </section>
@@ -241,5 +246,15 @@
         by Nastya Korneva, Tatyana Teryaeva, Yuliya Yaskevich</p>
     </div>
   </footer>
+  <script>
+      function ChangeColor() {
+          var borderB = document.getElementsByTagName('h3');
+          for (var i = 0; i < borderB.length; i++) {
+              borderB[i].style.borderColor = 'white';
+          }
+      }
+
+      h3.onclick = ChangeColor;
+  </script>
 </body>
 </html>
