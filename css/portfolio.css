@@ -8,14 +8,17 @@
 }
 
 .portfolio__item {
-    width: 20%;
-    margin: 1rem;
+    width: 25%;
+    margin: 0.5rem;
+}
+
+.portfolio__item a {
+    text-decoration: none;
 }
 
 .portfolio__item img {
     width: 100%;
-    /*border-radius: 50px;
-    object-fit: cover;*/
+    object-fit: cover;
 }
 
 .portfolio__photo figcaption {

@@ -86,6 +86,10 @@
     color: #240d39;
 }
 
+*:focus {
+    outline: 1px dotted gray;
+}
+
 body {
     position: relative;
     padding: 1px;
