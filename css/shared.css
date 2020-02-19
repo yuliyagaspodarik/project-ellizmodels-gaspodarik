@@ -87,7 +87,7 @@
 }
 
 *:focus {
-    outline: 1px dotted gray;
+    outline: none;
 }
 
 body {
