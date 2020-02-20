@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gelasio:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/gallery.css">
   <link rel="stylesheet" href="css/shared.css">
 </head>
 <body>
@@ -64,15 +65,42 @@
     </div>
   </header>
   <main>
-    <article class="projects-item projects-item-hushchatime">
-      <h1 class="projects-item__title title">HushchaTime</h1>
-      <h2 class="projects-item__subtitle subtitle">Наши проекты</h2>
-      <div class="projects-item__wrapper">
-        <div class="projects-item__photo"><img src="images/img30.jpg" alt="Young models Elliz Models"></div>
-        <div class="projects-item__photo"><img src="images/img32.jpg" alt="Young models Elliz Models"></div>
-        <div class="projects-item__photo"><img src="images/img47.jpg" alt="Young models Elliz Models"></div>
+    <section class="portfolio">
+      <div class="gallery">
+        <div class="image-container project-gallery">
+          <img class="preview" src="images/img30.jpg" alt="image1" title="Young models Elliz Models">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-1">zoom image-1</a>
+          </div>
+        </div>
+        <div class="image-container project-gallery">
+          <img class="preview" src="images/img32.jpg" alt="image2" title="Young models Elliz Models">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-2">zoom image-2</a>
+          </div>
+        </div>
+        <div class="image-container project-gallery">
+          <img class="preview" src="images/img47.jpg" alt="image3" title="Young models Elliz Models">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-3">zoom image-3</a>
+          </div>
+        </div>
+        <div class="image-container project-gallery">
+          <img class="preview" src="images/img001.jpg" alt="image4" title="Young models Elliz Models">
+          <div class="hover-buttons">
+            <a class="zoom" href="#img-4">zoom image-4</a>
+          </div>
+        </div>
+        <div class="overlay"></div>
+        <div id="project-popup" class="popup">
+          <img id="img-1" class="full-image" src="images/img30.jpg" alt="image1" title="Young models Elliz Models">
+          <img id="img-2" class="full-image" src="images/img32.jpg" alt="image2" title="Young models Elliz Models">
+          <img id="img-3" class="full-image" src="images/img47.jpg" alt="image3" title="Young models Elliz Models">
+          <img id="img-4" class="full-image" src="images/img001.jpg" alt="image4" title="Young models Elliz Models">
+          <span class="close"></span>
+        </div>
       </div>
-    </article>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__container">
@@ -100,5 +128,42 @@
         by Nastya Korneva, Tatyana Teryaeva, Yuliya Yaskevich</p>
     </div>
   </footer>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script>
+      'use strict';
+
+      $(function () {
+
+          $('.zoom').click(function () {
+              $('.hover-buttons').css('visibility', 'hidden');
+              $('.overlay').addClass('active');
+              $('.popup').addClass('active');
+
+              var activeImg = $(this).attr('href');
+              $(activeImg).fadeIn();
+          });
+
+          $('.close').click(function () {
+              $('.overlay').removeClass('active');
+              $('.popup').removeClass('active');
+              $('.full-image').hide();
+              $('.hover-buttons').css('visibility', 'visible');
+          });
+
+          $(document).on('click', '.overlay', function () {
+              $('.overlay').removeClass('active');
+              $('.popup').removeClass('active');
+              $('.full-image').hide();
+              $('.hover-buttons').css('visibility', 'visible');
+          });
+
+          $('.overlay').click(function () {
+              $('.overlay').removeClass('active');
+              $('.popup').removeClass('active');
+              $('.full-image').hide();
+              $('.hover-buttons').css('visibility', 'visible');
+          });
+      });
+  </script>
 </body>
 </html>
