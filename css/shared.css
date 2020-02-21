@@ -181,6 +181,11 @@ body {
     text-align: center;
 }
 
+.main-header__contact:hover {
+    transition: 0.5s;
+    transform: translateX(-10px);
+}
+
 .main-header__contact a {
     text-decoration: none;
     color: white;
