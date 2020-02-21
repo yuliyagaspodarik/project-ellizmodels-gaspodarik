@@ -340,7 +340,7 @@ figcaption span {
 }
 
 .event__photo {
-    width: 20%;
+    width: 25%;
     margin: 1rem;
 }
 
@@ -351,8 +351,14 @@ figcaption span {
 .event__photo_wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    margin: 0 2rem;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.event__wrapper-photovideo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 .main-footer__container {
