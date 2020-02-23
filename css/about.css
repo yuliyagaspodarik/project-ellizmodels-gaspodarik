@@ -27,6 +27,7 @@
     margin: 1rem;
     color: #240d39;
     font-family: 'Lobster', cursive;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: 1px;
+    text-align: justify;
 }

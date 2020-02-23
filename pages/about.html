@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>События</title>
+  <title>О нас</title>
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gelasio:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/shared.css">
-  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="icon" href="../favicon.ico">
+  <!--<link rel="manifest" href="../json/manifest.json">-->
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/shared.css">
 </head>
 <body>
   <header class="main-header">
@@ -22,7 +24,7 @@
     <nav class="main-nav">
       <ul class="main-nav__items">
         <li class="main-nav__item">
-          <a href="index.html" title="На главную">Главная</a>
+          <a href="../index.html" title="На главную">Главная</a>
         </li>
         <li class="main-nav__item">
           <a href="about.html" title="Перейти к разделу о нас">О нас</a>
@@ -35,7 +37,7 @@
           </ul>
         </li>
         <li class="main-nav__item logo logo-header">
-          <a href="index.html"
+          <a href="../index.html"
              title="Детское модельное агентство">ELLIZ<br/><span>Kids Model Agency</span><br/>MODELS</a>
         </li>
         <li class="main-nav__item activity">
@@ -65,34 +67,40 @@
     </div>
   </header>
   <main>
-    <article class="event">
-      <h1 class="event__title title">Грандиозное Annmodels Fashion Show</h1>
-      <h2 class="event__subtitle subtitle">Наши события</h2>
-      <div class="event__wrapper">
-        <div class="event__content">Маленькие модели Elliz Models представили коллекции TrendiBrendi, Sardinababy,
-          Lerede, Stefanii Adam на ежегодном грандиозном модном событии города Минска Annmodels Fashion Show. Мы
-          поздравляем наших ребят! Для многих из них это первый опыт участия в мероприятиях такого масштаба. Все дети
-          очень старались и достойно выступили. Желаем дальнейших успехов!
+    <article id="aboutus">
+      <h1 class="aboutus__title title">О нас</h1>
+      <h2 class="subtitle">Мы поможем Вашему ребенку попробовать себя в детском моделинге</h2>
+      <div class="aboutus__container aboutus__container-f">
+        <div class="aboutus__description">
+          <div>
+            <p>Модельное агентство ELLIZ MODELS было основано в 2019 году, хотя старт деятельности пришелся
+              на 2016 год.
+              За это время было потрачено много часов непрерывной работы для создания уникального продукта, который 
+              меньше, чем за год, стал знаменитым на территории Беларуси и за её пределами. Только благодаря
+              профессиональной команде, нам удалось подготовить уникальную программу обучения для детей и подростков.
+            </p>
+            <p>Все дети нашей школы автоматически попадают в базу модельного агентства и будут
+              иметь возможность участвовать в съемках для интернет-магазинов, журналов и рекламных кампаний брендов
+              Беларуси, России, Италии.</p>
+          </div>
+          <div class="aboutus__monogram"><img src="../images/monogram1.png" alt="monogram-picture"></div>
         </div>
-        <div class="event__wrapper-photovideo">
-          <div class="event__video">
-            <div class="event__video">
-              <video src="video/annmodels.mp4" width="600" loop preload="auto" controls muted autoplay>
-                Sorry !)
-              </video>
-            </div>
+        <div class="aboutus__photo"><img src="../images/img4.jpg" alt="Young models Elliz Models"></div>
+
+      </div>
+      <div class="aboutus__container aboutus__container-s">
+        <div class="aboutus__photo"><img src="../images/img5.jpg" alt="Young models Elliz Models"></div>
+
+        <div class="aboutus__description">
+          <div>
+            <p>Наша команда – это в крайней степени творческие люди с профессиональными знаниями, которые были получены
+              не только в нашей стране, но и за ее  пределами. Действующие модели, фотографы, основатели собственных
+              школ, известные визажисты и релукеры.</p>
+            <p>Мы амбициозны и точно знаем, куда двигаться!</p>
+            <p>Ключевым фактором и преимуществом нашей школы, является атмосфера открытого общения, без барьеров, для
+              более глубокого и профессионального изучения творческих талантов каждого ребенка.</p>
           </div>
-          <div class="event__photo_wrapper">
-            <div class="event__photo"><img src="images/img43.jpg" alt="Annmodels Fashion Show"></div>
-            <div class="event__photo"><img src="images/img39.jpg" alt="Annmodels Fashion Show"></div>
-            <div class="event__photo"><img src="images/img40.jpg" alt="Annmodels Fashion Show"></div>
-            <div class="event__photo"><img src="images/img41.jpg" alt="Annmodels Fashion Show"></div>
-            <div class="event__photo"><img src="images/img44.jpg" alt="Annmodels Fashion Show"></div>
-            <div class="event__photo"><img src="images/img45.jpg" alt="Annmodels Fashion Show"></div>
-            <div class="event__photo"><img src="images/img46.jpg" alt="Annmodels Fashion Show"></div>
-            <div class="event__photo"><img src="images/img50.jpg" alt="Annmodels Fashion Show"></div>
-            <div class="event__photo"><img src="images/img52.jpg" alt="Annmodels Fashion Show"></div>
-          </div>
+          <div class="aboutus__monogram"><img src="../images/monogram1.png" alt="monogram-picture"></div>
         </div>
       </div>
     </article>

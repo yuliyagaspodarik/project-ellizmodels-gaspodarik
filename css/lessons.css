@@ -56,7 +56,7 @@
 }
 
 .lesson__wrapper--black {
-    background-color: rgb(40, 46, 52);
+    background-color: black /*rgb(40, 46, 52)*/;
 }
 
 .lesson__wrapper--black .title {
