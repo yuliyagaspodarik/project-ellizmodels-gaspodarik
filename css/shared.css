@@ -418,8 +418,14 @@ figcaption span {
 
     .main-nav__items {
         display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
         flex-flow: column wrap;
         padding: 0;
+        opacity: 0.9;
     }
 
     .main-nav__items a {
@@ -427,6 +433,23 @@ figcaption span {
         border-top: 1px solid rgba(255, 255, 255, 0.3);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .activity:hover .main-nav__items-submenu {
+        position: relative;
+        display: inline-block;
+        padding: 0;
+        background-color: rgba(246, 239, 246, 0.5);
+        color: #240d39;
+        opacity: 0.8;
+    }
+
+    .activity:hover .main-nav__items-submenu a {
+        font-size: 1rem;
+    }
+
+    .activity:hover .main-nav__items-submenu li {
+        padding-bottom: 0;
     }
 
     .logo {
