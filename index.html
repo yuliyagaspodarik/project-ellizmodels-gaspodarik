@@ -21,15 +21,16 @@
   <link rel="stylesheet" href="css/shared.css">
 </head>
 <body>
+  <div id="backdrop" class="backdrop"></div>
   <header class="main-header">
     <div>
-      <button class="toggle-button">
+      <button id="toggle-button" class="toggle-button">
         <span class="toggle-button__bar"></span>
         <span class="toggle-button__bar"></span>
         <span class="toggle-button__bar"></span>
       </button>
     </div>
-    <nav class="main-nav">
+    <nav id="main-nav" class="main-nav" style="display: block">
       <ul class="main-nav__items">
         <li class="main-nav__item">
           <a href="index.html" title="На главную">Главная</a>
@@ -191,29 +192,33 @@
         </div>
         <div class="profile__item">
           <form action="#">
-            <p class="form-cell_left">
-              <label>Как Вас зовут<br/>
-                <input type="text" class="form-cell" name="firstname" placeholder="введите имя">
-              </label>
-            </p>
-            <p class="form-cell_right">
-              <label>Ваша почта<br/>
-                <input type="email" class="form-cell" name="emailbox" placeholder="введите E-mail">
-              </label>
-            </p>
-            <p>
-              <label for="message"></label>
-              <textarea id="message" name="massage" rows="20" cols="80"
-                        placeholder="Оставьте свой отзыв или вопрос"></textarea>
-            </p>
-            <p>
+            <div class="form__wrapper">
+              <div class="form-cell__wrapper">
+                <div class="form-cell--left">
+                  <label>Как Вас зовут<br/>
+                    <input type="text" class="form-cell" name="firstname" placeholder="введите имя">
+                  </label>
+                </div>
+                <div class="form-cell--right">
+                  <label>Ваша почта<br/>
+                    <input type="email" class="form-cell" name="emailbox" placeholder="введите E-mail">
+                  </label>
+                </div>
+              </div>
+              <div class="form-area__wrapper">
+                <label for="message"></label>
+                <textarea id="message" name="massage" rows="20" placeholder="Оставьте свой отзыв или вопрос">
+                </textarea>
+              </div>
+            </div>
+            <div>
               <label>
                 <input type="checkbox" name="request" value="Yes">Хочу учиться в Elliz Models
               </label>
-            </p>
-            <p>
+            </div>
+            <div>
               <input type="submit" value="Отправить" onclick="alert('Ваша заявка отправлена')">
-            </p>
+            </div>
           </form>
         </div>
       </div>
@@ -245,5 +250,21 @@
         by Nastya Korneva, Tatyana Teryaeva, Yuliya Yaskevich</p>
     </div>
   </footer>
+  <script src="js/jquery-3.2.1.min.js"></script>
+
+  <script>
+      'use strict';
+      var toggleButton = document.querySelector('.toggle-button');
+      var mainNav = document.querySelector('.main-nav__items');
+      var backDrop = document.querySelector('.backdrop');
+
+      toggleButton.addEventListener('click', function () {
+        mainNav.style.display = 'block';
+        backDrop.style.display = 'block';
+      });
+
+
+
+  </script>
 </body>
 </html>

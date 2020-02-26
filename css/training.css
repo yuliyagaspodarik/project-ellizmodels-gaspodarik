@@ -8,7 +8,7 @@
 }
 
 .teachers__item {
-    width: 17%;
+    width: 14rem;
     margin: 1rem;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .lessons__item {
-    width: 35%;
+    width: 30rem;
 }
 
 .lessons__item img {
@@ -84,8 +84,36 @@
 
 .groups__information {
     margin: 1rem 2rem;
+    text-align: justify;
 }
 
 .groups__information span {
     color: #a83859;
+}
+
+@media (max-width: 37.5rem) {
+    #teachers .title,
+    #groups .title {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    #teachers .subtitle,
+    #groups .subtitle {
+        font-size: 0.8rem;
+    }
+
+    #teachers figcaption,
+    #lessons a {
+        font-size: 1rem;
+    }
+
+    .lessons {
+        padding: 0;
+        margin: 0;
+    }
+
+    .groups__information {
+        font-size: 0.8rem;
+    }
 }

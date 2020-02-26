@@ -8,7 +8,7 @@
 }
 
 .portfolio__item {
-    width: 25%;
+    width: 20rem;
     margin: 0.5rem;
 }
 
@@ -37,4 +37,25 @@
 
 .portfolio__item:hover img {
     opacity: 0.8;
+}
+
+@media (max-width: 37.5rem) {
+    #portfolio .portfolio__title {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    #portfolio .portfolio__subtitle {
+        font-size: 0.8rem;
+    }
+
+    #portfolio .portfolio__photo figcaption,
+    #portfolio .portfolio__profile-title {
+        font-size: 0.7rem;
+    }
+
+    #portfolio .portfolio__wrapper {
+        padding: 0;
+        margin: 0;
+    }
 }

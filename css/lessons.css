@@ -76,3 +76,24 @@
     color: #e4dde4;
 }
 
+@media (max-width: 62.5rem) {
+    .lesson__content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 37.5rem) {
+    .lesson .lesson__title {
+        font-size: 1.2rem;
+    }
+
+    .parallax__title span {
+        font-size: 1.2rem;
+    }
+
+    .lesson__content {
+        padding: 1rem 3rem 2rem;
+        margin: 0;
+        font-size: 0.7rem;
+    }
+}

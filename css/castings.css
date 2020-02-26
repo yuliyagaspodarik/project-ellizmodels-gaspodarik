@@ -4,7 +4,7 @@
 
 .castings__wrapper-f {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .castings__wrapper-s {
@@ -48,4 +48,66 @@
 
 .castings__item span {
     color: #a83859;
+}
+
+@media (max-width: 62.5rem) {
+    .castings__information {
+        font-size: 0.8rem;
+    }
+
+    .castings__cover {
+        margin-left: 1rem;
+    }
+
+    .castings__item p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 37.5rem) {
+    #castings .title {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    #castings .subtitle {
+        font-size: 0.8rem;
+    }
+
+    #castings .castings__wrapper-f {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #castings .castings__information {
+        width: 85%;
+    }
+
+    #castings .castings__cover {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #castings .castings__cover {
+        order: 1;
+    }
+
+    #castings .castings__information {
+        order: 2;
+    }
+}
+
+@media (max-width: 27.5rem) {
+    #castings .castings__wrapper-s {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #castings .castings__item {
+        width: 60%;
+    }
+
+    #castings .castings__item p {
+        font-size: 0.8rem;
+    }
 }

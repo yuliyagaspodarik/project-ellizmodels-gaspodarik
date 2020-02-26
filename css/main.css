@@ -96,6 +96,7 @@
     flex-direction: column;
     justify-content: flex-start;
     font-size: 1rem;
+    text-align: justify;
 }
 
 .description__content-title {
@@ -158,7 +159,6 @@
 
 .ui-state-active {
     background-color: #c5c9c3;
-   /* border-color: #c5c9c3;*/
 }
 
 .ui-state-default {
@@ -167,7 +167,7 @@
 
 .questions__answers {
     margin: 0.7rem;
-    background-color: #c5c9c3/*rgba(158, 158, 153, 0.7)*/;
+    background-color: #c5c9c3;
     font-family: 'Lobster', cursive;
 }
 
@@ -199,6 +199,10 @@
     margin: 0;
 }
 
+form {
+    width: 100%;
+}
+
 .form-cell,
 input[type=submit] {
     width: 12rem;
@@ -206,19 +210,30 @@ input[type=submit] {
     border: none;
 }
 
-.form-cell_left {
-    float: left;
+.form__wrapper {
+    display: flex;
+    flex-flow: column;
 }
 
-.form-cell_right {
-    float: right;
+.form-cell__wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-area__wrapper {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 textarea {
+    width: 100%;
     border: none;
 }
 
 input[type=submit] {
+    margin: 1rem 0;
     color: white;
     background-color: #a83859;
     font-size: 1rem;
@@ -228,4 +243,96 @@ input[type=submit] {
 input[type=checkbox] {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+@media (max-width: 71.9rem) {
+    .description__content-title {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .description__content {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .description__photos-series figcaption p {
+        font-size: 0.9rem;
+    }
+
+    .advantages__wrapper .advantages__item {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 42rem) {
+    #description .title,
+    #advantages .advantages__title,
+    #questions .title,
+    #profile .profile__title {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    #description .subtitle,
+    #questions .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .description__wrapper .description__photos-series p {
+        font-size: 0.5rem;
+    }
+
+    #description .description__wrapper {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #description .description__item {
+        width: 80%;
+    }
+
+    #description figcaption p {
+        font-size: 1.2rem;
+    }
+
+    #description .description__photos-series {
+        order: 1;
+    }
+
+    #description .description__content {
+        order: 2;
+    }
+
+    #description .description__photos-first {
+        order: 3;
+    }
+
+    #advantages .advantages__item {
+        font-size: 0.7rem;
+    }
+
+    #advantages .advantages__item i:before {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #questions .questions__item {
+        font-size: 0.8rem;
+    }
+
+    #questions .questions__answers p {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    #profile .profile__wrapper {
+        flex-direction: column;
+        align-content: center;
+        margin: 0;
+    }
+
+    #profile .profile__item {
+        width: 90%;
+    }
 }

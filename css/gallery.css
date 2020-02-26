@@ -228,3 +228,21 @@
         min-height: 260px;
     }
 }
+
+@media (max-width: 75rem) {
+    .popup.active {
+        width: 40%;
+    }
+}
+
+@media (max-width: 62.5rem) {
+    .popup.active {
+        width: 50%;
+    }
+}
+
+@media (max-width: 36rem) {
+    .popup.active {
+        width: 70%;
+    }
+}

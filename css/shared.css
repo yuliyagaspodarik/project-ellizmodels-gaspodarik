@@ -131,6 +131,17 @@ body {
     display: none;
 }
 
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .activity:hover .main-nav__items-submenu {
     position: absolute;
     top: 100%;
@@ -176,6 +187,7 @@ body {
     margin: 0;
     border-radius: 50px;
     background-color: #a83859;
+    opacity: 0.7;
     font-size: 0.8rem;
     font-weight: 400;
     text-align: center;
@@ -217,13 +229,16 @@ body {
 }
 
 .toggle-button {
-    width: 3rem;
+    width: 2.3rem;
     border: none;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 0.2rem 0 0;
     background: transparent;
     vertical-align: middle;
     cursor: pointer;
+}
+
+.toggle-button:hover {
+    opacity: 0.5;
 }
 
 .toggle-button:focus {
@@ -235,7 +250,8 @@ body {
     width: 100%;
     height: 0.2rem;
     margin: 0.6rem 0;
-    background: #240d39;
+    background: #a83859;
+    opacity: 0.7;
 }
 
 .toggle-button {
@@ -345,8 +361,8 @@ figcaption span {
 }
 
 .event__photo {
-    width: 25%;
-    margin: 1rem;
+    width: 20rem;
+    margin: 0;
 }
 
 .event__photo img {
@@ -356,14 +372,8 @@ figcaption span {
 .event__photo_wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    margin: 1rem;
-}
-
-.event__wrapper-photovideo {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0;
 }
 
 .main-footer__container {
@@ -396,11 +406,18 @@ figcaption span {
 }
 
 @media (max-width: 37.5rem) {
-    .contact {
-        display: none;
+    .main-header__contact {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .toggle-button {
+        display: block;
+        position: fixed;
     }
 
     .main-nav__items {
+        display: none;
         flex-flow: column wrap;
         padding: 0;
     }
@@ -427,5 +444,24 @@ figcaption span {
 
     .main-nav__item:hover {
         border-bottom: none;
+    }
+
+    .event__title {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    .event .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .event__content {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 68.7rem) {
+    .event__video video {
+        width: 100%;
     }
 }

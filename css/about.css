@@ -31,3 +31,39 @@
     letter-spacing: 1px;
     text-align: justify;
 }
+
+@media (max-width: 56.5rem) {
+    .aboutus__description p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 37.5rem) {
+    #aboutus .title {
+        margin: 2rem 0 0 2rem;
+        font-size: 1.2rem;
+    }
+
+    #aboutus .aboutus__container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #aboutus .aboutus__description {
+        width: 90%;
+        padding: 0 1rem;
+        margin: 0 1rem;
+    }
+
+    #aboutus .aboutus__photo {
+        width: 85%;
+    }
+
+    .aboutus__container-f .aboutus__photo {
+        order: 1;
+    }
+
+    .aboutus__container-f .aboutus__description {
+        order: 2;
+    }
+}
