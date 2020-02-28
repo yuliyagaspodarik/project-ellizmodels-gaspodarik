@@ -1,3 +1,10 @@
+@import "style.css";
+
+:root {
+    --bg-color: white;
+    --bg-container-color: var(--bright-wine);
+}
+
 .parallax {
     position: relative;
     opacity: 0.9;
@@ -31,7 +38,7 @@
     top: 50%;
     width: 100%;
     text-align: center;
-    color: #fff;
+    color: var(--bg-color);
     font-size: 27px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -39,7 +46,7 @@
 
 .parallax__title span {
     padding: 0 1rem;
-    color: white;
+    color: var(--bg-color);
     text-transform: none;
     font-weight: 700;
 }
@@ -56,14 +63,14 @@
 }
 
 .lesson__wrapper--black {
-    background-color: black /*rgb(40, 46, 52)*/;
+    background-color: black;
 }
 
 .lesson__wrapper--black .title {
     padding-top: 2rem;
     margin-top: 0;
-    color: #e4dde4;
-    border-color: #e4dde4;
+    color: var(--bg-container-color);
+    border-color: var(--bg-container-color);
 }
 
 .lesson__wrapper--white .title {
@@ -73,7 +80,7 @@
 .lesson__wrapper--black .lesson__content {
     padding-bottom: 3rem;
     margin-bottom: 0;
-    color: #e4dde4;
+    color: var(--bg-container-color);
 }
 
 @media (max-width: 62.5rem) {

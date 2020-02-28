@@ -1,3 +1,13 @@
+@import "style.css";
+
+:root {
+    --bg-color: white;
+    --bg-container-color: var(--bright-wine);
+    --font-color: var(--blue-violet);
+    --link-border-font-color: var(--burgundy);
+    --questions-color: var(--fig);
+}
+
 .description__monogram {
     width: 50%;
     margin: 0 auto;
@@ -23,7 +33,7 @@
 }
 
 #advantages {
-    background-color: #e4dde4;
+    background-color: var(--bg-container-color);
     box-shadow: 2px 1px 3px 1px rgba(89, 87, 87, 0.5);
     height: 20rem;
 }
@@ -47,7 +57,7 @@
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    color: #240d39;
+    color: var(--font-color);
     text-align: center;
     font-size: 1.2rem;
 }
@@ -58,7 +68,7 @@
     left: calc(50% - 2.5rem);
     padding: 1rem;
     margin: 0.5rem;
-    border: 3px solid #240d39;
+    border: 3px solid var(--font-color);
     border-radius: 50px;
     font-size: 3rem;
 }
@@ -75,31 +85,31 @@
 }
 
 .questions__item:active {
-    border-color: #c5c9c3;
+    border-color: var(--questions-color);
 }
 
 .ui-state-active {
-    background-color: #c5c9c3;
+    background-color: var(--questions-color);
 }
 
 .ui-state-default {
-    color: #240d39;
+    color: var(--font-color);
 }
 
 .questions__answers {
     margin: 0.7rem;
-    background-color: #c5c9c3;
+    background-color: var(--questions-color);
     font-family: 'Lobster', cursive;
 }
 
 .questions__answers p {
     padding: 0;
-    color: white;
+    color: var(--bg-color);
     font-size: 1.1rem;
 }
 
 #profile {
-    background-color: #e4dde4;
+    background-color: var(--bg-container-color);
 }
 
 .profile__wrapper {
@@ -156,8 +166,8 @@ textarea {
 
 input[type=submit] {
     margin: 1rem 0;
-    color: white;
-    background-color: #a83859;
+    color: var(--bg-color);
+    background-color: var(--link-border-font-color);
     font-size: 1rem;
     font-family: 'Lobster', cursive;
 }

@@ -1,3 +1,13 @@
+@import "style.css";
+
+:root {
+    --bg-color: white;
+    --bg-container-color: var(--bright-wine);
+    --font-color: var(--blue-violet);
+    --link-border-font-color: var(--burgundy);
+    --questions-color: var(--fig);
+}
+
 .teachers__wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -20,7 +30,7 @@
 }
 
 .teachers__profile {
-    color: #a83859;
+    color: var(--link-border-font-color);
     text-decoration: none;
     font-family: 'Gelasio', serif;
     font-size: 0.8rem;
@@ -28,7 +38,7 @@
 }
 
 .teachers__photo figcaption {
-    border-bottom: 1px solid #a83859;
+    border-bottom: 1px solid var(--link-border-font-color);
     border-radius: 50px;
     font-size: 1.3rem;
 }
@@ -36,7 +46,7 @@
 .lessons {
     padding: 4rem;
     margin: 4rem 0;
-    background-color: #e4dde4;
+    background-color: var(--bg-container-color);
 }
 
 #lessons .lessons__title {
@@ -79,14 +89,14 @@
     top: 40%;
     left: 0;
     padding: 0.5rem;
-    background-color: #e4dde4;
+    background-color: var(--bg-container-color);
     opacity: 0.8;
     text-align: center;
 }
 
 .lessons__link {
     text-decoration: none;
-    color: #240d39;
+    color: var(--font-color);
     font-size: 2rem;
     font-weight: 700;
 }
@@ -97,7 +107,7 @@
 }
 
 .groups__information span {
-    color: #a83859;
+    color: var(--link-border-font-color);
 }
 
 @media (max-width: 37.5rem) {

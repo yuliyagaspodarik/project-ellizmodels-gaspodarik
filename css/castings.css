@@ -1,3 +1,10 @@
+@import "style.css";
+
+:root {
+    --font-color: var(--blue-violet);
+    --link-border-font-color: var(--burgundy);
+}
+
 .castings__wrapper {
     display: flex;
 }
@@ -42,12 +49,12 @@
 }
 
 .castings__item p {
-    border-top: 1px solid #a83859;
+    border-top: 1px solid var(--link-border-font-color);
     font-size: 0.8rem;
 }
 
 .castings__item span {
-    color: #a83859;
+    color: var(--link-border-font-color);
 }
 
 @media (max-width: 62.5rem) {

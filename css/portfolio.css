@@ -1,3 +1,9 @@
+@import "style.css";
+
+:root {
+    --link-border-font-color: var(--burgundy);
+}
+
 .portfolio__wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -22,13 +28,13 @@
 }
 
 .portfolio__photo figcaption {
-    border-bottom: 1px solid #a83859;
+    border-bottom: 1px solid var(--link-border-font-color);
     border-radius: 50px;
     font-size: 1.3rem;
 }
 
 .portfolio__profile {
-    color: #a83859;
+    color: var(--link-border-font-color);
     text-decoration: none;
     font-family: 'Gelasio', serif;
     font-size: 0.8rem;

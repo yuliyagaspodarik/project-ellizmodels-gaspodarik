@@ -1,3 +1,13 @@
+@import "style.css";
+
+:root {
+    --bg-color: white;
+    --bg-container-color: var(--bright-wine);
+    --font-color: var(--blue-violet);
+    --link-border-font-color: var(--burgundy);
+    --questions-color: var(--fig);
+}
+
 @font-face {
     font-family: 'ellizModels';
     src: url('../fonts/ellizModels.eot?5ug0gv');
@@ -9,7 +19,6 @@
     font-style: normal;
     font-display: block;
 }
-
 
 [class^="i-eM-"], [class*=" i-eM-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
@@ -55,7 +64,7 @@
 
 * {
     box-sizing: border-box;
-    color: #240d39;
+    color: var(--font-color);
 }
 
 *:focus {
@@ -72,7 +81,7 @@ body {
 .main-nav__items,
 .main-footer {
     box-shadow: 2px 1px 3px 1px rgba(89, 87, 87, 0.5);
-    background-color: #e4dde4;
+    background-color: var(--bg-container-color);
 }
 
 .main-nav__items {
@@ -96,7 +105,7 @@ body {
 }
 
 .main-nav__item:hover {
-    border-bottom: 1px solid #a83859;
+    border-bottom: 1px solid var(--link-border-font-color);
 }
 
 .main-nav__items-submenu {
@@ -121,7 +130,7 @@ body {
     width: 9rem;
     list-style: none;
     padding: 0.5rem;
-    color: #240d39;
+    color: var(--font-color);
     background-color: rgba(228, 221, 228, 0.5);
     text-align: left;
     cursor: pointer;
@@ -158,7 +167,7 @@ body {
     padding: 0.5rem 1rem;
     margin: 0;
     border-radius: 50px;
-    background-color: #a83859;
+    background-color: var(--link-border-font-color);
     opacity: 0.7;
     font-size: 0.8rem;
     font-weight: 400;
@@ -172,7 +181,7 @@ body {
 
 .main-header__contact a {
     text-decoration: none;
-    color: white;
+    color: var(--bg-color);
 }
 
 .contact__item {
@@ -222,7 +231,7 @@ body {
     width: 100%;
     height: 0.2rem;
     margin: 0.6rem 0;
-    background: #a83859;
+    background: var(--link-border-font-color);
     opacity: 0.7;
 }
 
@@ -279,24 +288,24 @@ body {
 
 .description__photos-series figcaption p,
 .events__photos-series figcaption p {
-    color: white;
+    color: var(--bg-color);
 }
 
 figcaption span {
-    color: white;
+    color: var(--bg-color);
     font-family: 'Great Vibes', cursive;
 }
 
 .title {
     padding-bottom: 1rem;
     margin: 4rem 2rem 0 2rem;
-    border-bottom: 1px solid #a83859;
-    color: #240d39;
+    border-bottom: 1px solid var(--link-border-font-color);
+    color: var(--font-color);
     font-size: 2rem;
 }
 
 .subtitle {
-    color: #240d39;
+    color: var(--font-color);
     padding: 0;
     margin-top: 0;
     margin-left: 2rem;
@@ -412,7 +421,7 @@ figcaption span {
         display: inline-block;
         padding: 0;
         background-color: rgba(246, 239, 246, 0.5);
-        color: #240d39;
+        color: var(--font-color);
         opacity: 0.8;
     }
 
@@ -434,7 +443,7 @@ figcaption span {
     }
 
     .main-nav__items a:hover {
-        background-color: white;
+        background-color: var(--bg-color);
     }
 
     .main-nav__item:hover {
