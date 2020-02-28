@@ -39,6 +39,14 @@
     background-color: #e4dde4;
 }
 
+#lessons .lessons__title {
+    margin: 0;
+}
+
+#lessons .lessons__subtitle {
+    margin-left: 0;
+}
+
 .lessons__wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -57,9 +65,10 @@
 
 .lessons__item:hover {
     transition: all 0.5s ease-in-out;
-    transform: scale(1.05,1.05);
+    transform: scale(1.05, 1.05);
 
 }
+
 .lessons__item figure {
     position: relative;
 }
@@ -93,14 +102,20 @@
 
 @media (max-width: 37.5rem) {
     #teachers .title,
-    #groups .title {
+    #groups .title,
+    #lessons .title {
         margin: 2rem 0 0 2rem;
         font-size: 1.2rem;
     }
 
     #teachers .subtitle,
-    #groups .subtitle {
+    #groups .subtitle,
+    #lessons .subtitle {
         font-size: 0.8rem;
+    }
+
+    #lessons .subtitle {
+        margin-left: 2rem;
     }
 
     #teachers figcaption,

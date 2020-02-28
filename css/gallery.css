@@ -28,6 +28,14 @@
     text-align: center;
 }
 
+.portfolio .portfolio-gallery__title {
+    margin: 0;
+}
+
+.portfolio .portfolio-gallery__subtitle {
+    margin-left: 0;
+}
+
 .gallery {
     font-size: 0;
     max-width: 1170px;
@@ -244,5 +252,9 @@
 @media (max-width: 36rem) {
     .popup.active {
         width: 70%;
+    }
+
+    .portfolio .portfolio-gallery__title {
+        font-size: 1.2rem;
     }
 }

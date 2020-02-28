@@ -25,28 +25,12 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.i-eM-images:before {
-    content: "\e90e";
-}
-
 .i-eM-camera:before {
     content: "\e90f";
 }
 
-.i-eM-profile:before {
-    content: "\e923";
-}
-
-.i-eM-stack:before {
-    content: "\e92e";
-}
-
 .i-eM-address-book:before {
     content: "\e944";
-}
-
-.i-eM-alarm:before {
-    content: "\e950";
 }
 
 .i-eM-calendar:before {
@@ -55,18 +39,6 @@
 
 .i-eM-users:before {
     content: "\e972";
-}
-
-.i-eM-gift:before {
-    content: "\e99f";
-}
-
-.i-eM-clipboard:before {
-    content: "\e9b8";
-}
-
-.i-eM-checkmark:before {
-    content: "\ea10";
 }
 
 .i-eM-mail:before {

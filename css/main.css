@@ -1,87 +1,3 @@
-@font-face {
-    font-family: 'ellizModels';
-    src: url('../fonts/ellizModels.eot?5ug0gv');
-    src: url('../fonts/ellizModels.eot?5ug0gv#iefix') format('embedded-opentype'),
-    url('../fonts/ellizModels.ttf?5ug0gv') format('truetype'),
-    url('../fonts/ellizModels.woff?5ug0gv') format('woff'),
-    url('../fonts/ellizModels.svg?5ug0gv#ellizModels') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-[class^="i-eM-"], [class*=" i-eM-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'ellizModels' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.i-eM-images:before {
-    content: "\e90e";
-}
-
-.i-eM-camera:before {
-    content: "\e90f";
-}
-
-.i-eM-profile:before {
-    content: "\e923";
-}
-
-.i-eM-stack:before {
-    content: "\e92e";
-}
-
-.i-eM-address-book:before {
-    content: "\e944";
-}
-
-.i-eM-alarm:before {
-    content: "\e950";
-}
-
-.i-eM-calendar:before {
-    content: "\e953";
-}
-
-.i-eM-users:before {
-    content: "\e972";
-}
-
-.i-eM-gift:before {
-    content: "\e99f";
-}
-
-.i-eM-clipboard:before {
-    content: "\e9b8";
-}
-
-.i-eM-checkmark:before {
-    content: "\ea10";
-    padding: 1rem;
-    color: #c5c9c3;
-}
-
-.i-eM-mail:before {
-    content: "\ea83";
-}
-
-.i-eM-instagram:before {
-    content: "\ea92";
-}
-
-.i-eM-vk:before {
-    content: "\ea98";
-}
-
 .description__monogram {
     width: 50%;
     margin: 0 auto;
@@ -119,14 +35,18 @@
     font-size: 2rem;
     text-align: center;
 }
+
 .advantages__wrapper {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: baseline;
 }
 
 .advantages__item {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
     color: #240d39;
     text-align: center;
     font-size: 1.2rem;
@@ -136,9 +56,10 @@
     position: absolute;
     top: 3rem;
     left: calc(50% - 2.5rem);
+    padding: 1rem;
+    margin: 0.5rem;
     border: 3px solid #240d39;
     border-radius: 50px;
-    padding: 1rem;
     font-size: 3rem;
 }
 
@@ -172,6 +93,7 @@
 }
 
 .questions__answers p {
+    padding: 0;
     color: white;
     font-size: 1.1rem;
 }
@@ -260,6 +182,10 @@ input[type=checkbox] {
         font-size: 0.9rem;
     }
 
+    .advantages__title {
+        margin: 0;
+    }
+
     .advantages__wrapper .advantages__item {
         font-size: 0.9rem;
     }
@@ -319,6 +245,10 @@ input[type=checkbox] {
 
     #questions .questions__item {
         font-size: 0.8rem;
+    }
+
+    #questions .questions__wrapper {
+        margin: 0 1rem;
     }
 
     #questions .questions__answers p {
